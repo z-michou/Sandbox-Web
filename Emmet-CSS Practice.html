@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      td {
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #000;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+      }
+
+      .table {
+        margin-top: 20px;
+      }
+      .table td:not(.row2 .col1 ~ td) {
+        background-color: lightcyan;
+      }
+      .row2 .col3 ~ td {
+        background-color: lightcoral;
+      }
+
+      .row2 .col2::before {
+        content: "text ";
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 title="item1">Header with tag h1</h1>
+    <h2 title="item2">Header with tag h2</h2>
+    <h3 title="item3">Header with tag h3</h3>
+    <h4 title="item4">Header with tag h4</h4>
+    <h5 title="item5">Header with tag h5</h5>
+    <h6 title="item6">Header with tag h6</h6>
+    <p>Ckick <a href="">here</a> to continue</p>
+
+    <table>
+      <tr class="row">
+        <td class="col">Colone 1</td>
+        <td class="col">Colone 2</td>
+        <td class="col">Colone 3</td>
+        <td class="col">Colone 4</td>
+        <td class="col">Colone 5</td>
+      </tr>
+      <tr class="row">
+        <td class="col">Colone 1</td>
+        <td class="col">Colone 2</td>
+        <td class="col">Colone 3</td>
+        <td class="col">Colone 4</td>
+        <td class="col">Colone 5</td>
+      </tr>
+      <tr class="row">
+        <td class="col">Colone 1</td>
+        <td class="col">Colone 2</td>
+        <td class="col">Colone 3</td>
+        <td class="col">Colone 4</td>
+        <td class="col">Colone 5</td>
+      </tr>
+      <tr class="row">
+        <td class="col">Colone 1</td>
+        <td class="col">Colone 2</td>
+        <td class="col">Colone 3</td>
+        <td class="col">Colone 4</td>
+        <td class="col">Colone 5</td>
+      </tr>
+    </table>
+    <table class="table">
+      <tr class="row1">
+        <td class="col1">Colone 01</td>
+        <td class="col2">Colone 02</td>
+        <td class="col3">Colone 03</td>
+        <td class="col4">Colone 04</td>
+        <td class="col5">Colone 05</td>
+      </tr>
+      <tr class="row2">
+        <td class="col1">Colone 01</td>
+        <td class="col2">Colone 02</td>
+        <td class="col3">Colone 03</td>
+        <td class="col4">Colone 04</td>
+        <td class="col5">Colone 05</td>
+      </tr>
+      <tr class="row3">
+        <td class="col1">Colone 01</td>
+        <td class="col2">Colone 02</td>
+        <td class="col3">Colone 03</td>
+        <td class="col4">Colone 04</td>
+        <td class="col5">Colone 05</td>
+      </tr>
+      <tr class="row4">
+        <td class="col1">Colone 01</td>
+        <td class="col2">Colone 02</td>
+        <td class="col3">Colone 03</td>
+        <td class="col4">Colone 04</td>
+        <td class="col5">Colone 05</td>
+      </tr>
+    </table>
+  </body>
+</html>
